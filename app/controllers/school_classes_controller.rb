@@ -5,6 +5,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    
   end
 
   def show
