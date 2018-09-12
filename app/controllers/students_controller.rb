@@ -22,10 +22,4 @@ class StudentController < ApplicationController
     @student = Student.find(params[:id])
     @student.update(post_params(:first_name, :last_name))
   end
-
-private
-
-  def post_params(*args)
-    params.require(:post).permit(*args)
-  end
 end
