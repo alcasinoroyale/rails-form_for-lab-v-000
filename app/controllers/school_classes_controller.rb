@@ -7,7 +7,7 @@ class SchoolClassesController < ApplicationController
   def create
     @school_class = SchoolClass.new(params.require(:school_class).permit(:title, :room_number))
     @student.save
-    redirect_to school_class_path(@student)
+    redirect_to school_class_path(@school_class)
   end
 
   def show
